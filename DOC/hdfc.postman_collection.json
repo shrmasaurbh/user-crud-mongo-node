@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "223a6833-8753-4359-95b1-35a183459dda",
+		"name": "hdfc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"password\":\"qWertyu!\",\"email\":\"saurabh@asdas.com\"}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"newwww name\",\"password\":\"Qwertyui!\",\"confirmpassword\":\"Qwertyui!\",\"email\":\"ssaurabh@asdas.com\",\"mobile_number\":9111111111}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_password(when logged in)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjZmMWYzYTFhM2YzMDcxNDc5ZGE1NWEiLCJuYW1lIjoibmV3d3d3IG5hbWUiLCJlbWFpbCI6InNhdXJhYmhAYXNkYXMuY29tIiwiaWF0IjoxNjAxMTIxMzEyLCJleHAiOjE2MDE0NDUzMTJ9.fS4Y5zkXOSJbIN1lKSo-bDsWj96jcImaVtShIEDoNO8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"currentpassword\":\"qwertyu\",\"password\":\"Qwertyui!\",\"confirmpassword\":\"Qwertyui!\"}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/update_password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"update_password"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

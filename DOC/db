@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "5f6f1f3a1a3f3071479da55a"
+  },
+  "role": "user",
+  "is_active": true,
+  "name": "newwww name",
+  "email": "saurabh@asdas.com",
+  "password": "$2b$10$iPJu/uGSz6Zs5W4XOYXlKOHdm1pruu2unVoPJlU5n3NMzJh3uEkEG",
+  "createdAt": {
+    "$date": "2020-09-26T11:00:10.884Z"
+  },
+  "updatedAt": {
+    "$date": "2020-09-26T12:08:05.028Z"
+  }
+},{
+  "_id": {
+    "$oid": "5f6f379a106fd97f2e5abd98"
+  },
+  "role": "user",
+  "is_active": false,
+  "name": "newwww name",
+  "email": "ssaurabh@asdas.com",
+  "password": "$2b$10$Nb3vhlR19b/KTBZcoRVhieiVkdxQ3D4Q8YvVaUJrUTLLeukcbkImS",
+  "createdAt": {
+    "$date": "2020-09-26T12:44:10.614Z"
+  },
+  "updatedAt": {
+    "$date": "2020-09-26T12:44:10.614Z"
+  }
+}]
