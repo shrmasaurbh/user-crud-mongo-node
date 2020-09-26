@@ -12,7 +12,7 @@ To start the server.
 
 To check the linting.
 
-## use the postman collection and database file for quick setup which are docs folder
+## use the postman collection and database file for quick setup which are docs folder and .env.sample file to create .env file
 
 #Database used: mongoDb
 #collection name: hdfc
